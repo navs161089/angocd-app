@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp-navs
-        image: navs161089/navs-webapp:v2
+        image: navs161089/navs-webapp:v3
         ports:
         - containerPort: 80
