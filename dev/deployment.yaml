@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-v2
+  name: myapp-navs
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: myapp-navs
   replicas: 2
   template:
     metadata:
       labels:
-        app: myapp
+        app: myapp-navs
     spec:
       containers:
-      - name: myapp
-        image: nanajanashia/argocd-app:1.2
+      - name: myapp-navs
+        image: navs161089/navs-webapp:v2
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
